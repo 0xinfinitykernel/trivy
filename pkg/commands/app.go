@@ -775,11 +775,10 @@ func NewPluginCommand() *cli.Command {
 // NewK8sCommand is the factory method to add k8s subcommand
 func NewK8sCommand() *cli.Command {
 	return &cli.Command{
-		Name:      "kubernetes",
-		Aliases:   []string{"k8s"},
-		ArgsUsage: "TODO",
-		Usage:     "TODO",
-		Action:    artifact.K8sRun,
+		Name:    "kubernetes",
+		Aliases: []string{"k8s"},
+		Usage:   "TODO",
+		Action:  artifact.K8sRun,
 		Flags: []cli.Flag{
 			&templateFlag,
 			&formatFlag,
